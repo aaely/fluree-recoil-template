@@ -11,7 +11,7 @@ async function parseJSON(response) {
 
 const flureeFetch = async (uri, body) => {
   try {
-      const fullUri = "http://localhost:8080/fdb/aaely/dispensary" + uri
+      const fullUri = "http://localhost:8080/fdb/<ledger name>" + uri
       const response = await axios({
         url: fullUri,
         method: 'POST',
